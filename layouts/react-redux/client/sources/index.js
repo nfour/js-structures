@@ -1,5 +1,4 @@
-export async function getStuff() {
-    const res  = await fetch('/api/stuff')
-    const data = await res.json()
-    return { data }
-}
+
+export default process.env.NODE_ENV === 'test'
+    ? new Fetcher( require('./vectors') )
+    : new Fetcher( 'http://livedata.test' )
