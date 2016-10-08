@@ -1,0 +1,3 @@
+[submodule "layouts/react-redux-modular-link"]
+	path = layouts/react-redux-modular-link
+	url = https://github.com/nfour/r2am
