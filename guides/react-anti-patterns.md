@@ -75,7 +75,6 @@ In the above example props are computed on heavily and thus the render method sh
 In react it is important to break components up when they do expensive operations, as the component hierachy is always rendered
 from the top down.
 
-Don't use `{...props}`. It will clone the props object each time which will result in pure render functions detecting a change always.
 
 ```
 - Root
